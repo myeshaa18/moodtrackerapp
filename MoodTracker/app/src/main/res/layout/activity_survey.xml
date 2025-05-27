@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_survey"
+                app:tint="@color/primary_blue"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mood Survey"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help us understand how you're feeling"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Question 1 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/background_secondary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/primary_blue"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="How are you feeling today?"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rgQuestion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q1_great"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Great! 😊"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_very_happy" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q1_good"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Good 🙂"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_happy" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q1_okay"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Okay 😐"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_neutral" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q1_bad"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Not good 😔"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_sad" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Question 2 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/background_secondary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/accent_green"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="What's your energy level?"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rgQuestion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q2_high"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="High Energy ⚡"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/accent_yellow" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q2_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Medium Energy 🔋"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/accent_green" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q2_low"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Low Energy 🪫"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/accent_orange" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q2_very_low"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Very Low 😴"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_sad" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Question 3 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/background_secondary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/accent_orange"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="How stressed do you feel?"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rgQuestion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q3_none"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Not stressed 😌"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_very_happy" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q3_little"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="A little stressed 😕"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/accent_yellow" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q3_moderate"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Moderately stressed 😰"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/accent_orange" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q3_high"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Very stressed 😫"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/error" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Question 4 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/background_secondary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="4"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/accent_pink"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="How do you feel about social interaction today?"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rgQuestion4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q4_love"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Love socializing 🥳"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_very_happy" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q4_enjoy"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Enjoy it 😊"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_happy" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q4_neutral"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Neutral 😐"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_neutral" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_q4_avoid"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Want to avoid it 😔"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:padding="12dp"
+                        android:background="@drawable/radio_button_background"
+                        app:buttonTint="@color/mood_sad" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Submit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitSurvey"
+            style="@style/CustomMaterialButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Get My Recommendations"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/ic_arrow_forward"
+            app:iconGravity="end"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

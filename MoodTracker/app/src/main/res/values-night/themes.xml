@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dark theme overrides -->
+    <style name="Base.Theme.MoodTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_light</item>
+        <item name="colorSecondary">@color/accent_pink</item>
+        <item name="colorSecondaryVariant">@color/accent_green</item>
+        <item name="android:colorBackground">@color/background_primary_dark</item>
+        <item name="colorSurface">@color/background_secondary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/text_primary_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="android:statusBarColor">@color/background_primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/background_primary_dark</item>
+    </style>
+    <color name="background_primary">@color/background_primary_dark</color>
+    <color name="background_secondary">@color/background_secondary_dark</color>
+    <color name="background_tertiary">@color/background_tertiary_dark</color>
+
+    <color name="text_primary">@color/text_primary_dark</color>
+    <color name="text_secondary">@color/text_secondary_dark</color>
+    <color name="text_light">@color/text_light_dark</color>
+</resources>

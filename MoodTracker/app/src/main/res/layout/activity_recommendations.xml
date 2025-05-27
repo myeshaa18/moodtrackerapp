@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMoodResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your mood today: Good"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here are some activities to help you today:"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Recommendation 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvRec1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌅 Morning Activity"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRec1Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start your day with a positive activity"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Recommendation 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvRec2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏃‍♂️ Physical Activity"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRec2Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get your body moving"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Recommendation 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvRec3Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧘‍♀️ Mindfulness"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRec3Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practice mindfulness and relaxation"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Recommendation 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvRec4Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎨 Creative Activity"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRec4Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Express yourself creatively"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Recommendation 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvRec5Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👥 Social Connection"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRec5Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect with others"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Recommendation 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:id="@+id/tvRec6Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌱 Self Care"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRec6Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take care of yourself"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Back to Home"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M60,10 C88.71,10 110,31.29 110,60 C110,88.71 88.71,110 60,110 C31.29,110 10,88.71 10,60 C10,31.29 31.29,10 60,10 Z" />
+
+    <!-- Inner Circle with Gradient Effect -->
+    <path
+        android:fillColor="#5BA3F5"
+        android:pathData="M60,20 C82.09,20 100,37.91 100,60 C100,82.09 82.09,100 60,100 C37.91,100 20,82.09 20,60 C20,37.91 37.91,20 60,20 Z" />
+
+    <!-- Mood Face - Happy Expression -->
+    <!-- Eyes -->
+    <circle
+        android:fillColor="#FFFFFF"
+        android:centerX="48"
+        android:centerY="48"
+        android:radius="4dp" />
+
+    <circle
+        android:fillColor="#FFFFFF"
+        android:centerX="72"
+        android:centerY="48"
+        android:radius="4dp" />
+
+    <!-- Smile -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M48,68 Q60,78 72,68" />
+
+    <!-- Chart/Graph Elements -->
+    <!-- Bar chart representation -->
+    <rect
+        android:fillColor="#FFFFFF"
+        android:width="3dp"
+        android:height="12dp"
+        android:x="35dp"
+        android:y="75dp"
+        android:alpha="0.8" />
+
+    <rect
+        android:fillColor="#FFFFFF"
+        android:width="3dp"
+        android:height="18dp"
+        android:x="41dp"
+        android:y="69dp"
+        android:alpha="0.8" />
+
+    <rect
+        android:fillColor="#FFFFFF"
+        android:width="3dp"
+        android:height="15dp"
+        android:x="47dp"
+        android:y="72dp"
+        android:alpha="0.8" />
+
+    <rect
+        android:fillColor="#FFFFFF"
+        android:width="3dp"
+        android:height="20dp"
+        android:x="53dp"
+        android:y="67dp"
+        android:alpha="0.8" />
+
+    <!-- Heart symbol for emotional connection -->
+    <path
+        android:fillColor="#FF6B9D"
+        android:pathData="M75,75 C75,73 77,71 79,71 C81,71 83,73 83,75 C83,77 79,81 75,75 Z M79,71 C81,71 83,73 83,75 C83,77 87,81 83,75 C83,73 85,71 87,71 C89,71 91,73 91,75 C91,79 83,87 75,75 Z"
+        android:alpha="0.9" />
+
+</vector>

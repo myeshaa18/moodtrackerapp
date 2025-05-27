@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary MoodTracker Colors -->
+    <color name="primary_blue">#4A90E2</color>
+    <color name="primary_blue_light">#5BA3F5</color>
+    <color name="primary_purple">#667eea</color>
+    <color name="primary_purple_dark">#764ba2</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_pink">#FF6B9D</color>
+    <color name="accent_green">#4ECDC4</color>
+    <color name="accent_orange">#FFB347</color>
+    <color name="accent_yellow">#FFE66D</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_20">#33000000</color>
+
+    <!-- Light Theme Colors -->
+    <color name="background_primary">#F8F9FA</color>
+    <color name="background_secondary">#FFFFFF</color>
+    <color name="background_tertiary">#F1F3F4</color>
+    <color name="text_primary">#212529</color>
+    <color name="text_secondary">#6C757D</color>
+    <color name="text_light">#ADB5BD</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="background_primary_dark">#121212</color>
+    <color name="background_secondary_dark">#1E1E1E</color>
+    <color name="background_tertiary_dark">#2A2A2A</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#B3B3B3</color>
+    <color name="text_light_dark">#808080</color>
+
+    <!-- Status Colors -->
+    <color name="success">#28A745</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#DC3545</color>
+    <color name="info">#17A2B8</color>
+
+    <!-- Mood Colors for Tracking -->
+    <color name="mood_very_happy">#4ECDC4</color>
+    <color name="mood_happy">#95E1D3</color>
+    <color name="mood_neutral">#F38BA8</color>
+    <color name="mood_sad">#A8DADC</color>
+    <color name="mood_very_sad">#457B9D</color>
+
+    <!-- Surface Colors -->
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="on_surface_light">#212529</color>
+    <color name="on_surface_dark">#FFFFFF</color>
+</resources>
